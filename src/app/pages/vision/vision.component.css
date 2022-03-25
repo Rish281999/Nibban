@@ -1,0 +1,31 @@
+/* h1 {
+    text-align: center;
+    margin: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+.contentHeading {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+mat-toolbar {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Calibri';
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.cardContent {
+    background-color: rgb(255, 244, 244);
+}

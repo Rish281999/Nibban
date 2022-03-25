@@ -1,0 +1,41 @@
+.topHeader {
+    background-color: black;
+    color: #ffffff;
+}
+
+a.title {
+    color: #ffffff !important;
+}
+
+.middleHeader a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+}
+
+.middleMenuBtn a {
+    background-color: red;
+    color: #ffffff !important;
+}
+
+.menuBtn {
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+
+.subscribeBtn,
+.loginBtn {
+    background-color: red;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 450;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px 10px;
+}
+
+.subscribeBtn:hover,
+.loginBtn:hover {
+    background-color: rgb(214, 38, 38);
+}

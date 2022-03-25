@@ -1,0 +1,40 @@
+.contactimg {
+    background: url(../../../assets/contact.jpg) no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contactimg h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+
+/* .container-fluid mat-card {
+
+} */
+
+
+/* form.contactForm {
+    margin: 10px;
+} */
+
+
+/* .contactForm {
+    padding: 20px;
+} */
+
+mat-toolbar {
+    margin-bottom: 10px;
+}
+
+.formHeading {
+    font-weight: bold;
+}
+
+.full-width {
+    width: 100%;
+}

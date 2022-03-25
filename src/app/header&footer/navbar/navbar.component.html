@@ -1,0 +1,80 @@
+<div class="header">
+    <mat-toolbar class="topHeader">
+        <div fxFlex="100%" fxLayoutAlign="end center">
+            <!-- <a mat-button>{{ email }}</a>
+            <a mat-button>{{ phoneNo }}</a> -->
+            <button mat-button>{{ email }}</button>
+            <button mat-button>{{ phoneNo }}</button>
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar>
+        <div fxFlex="100%" fxLayoutAlign="center center" fxLayoutAlign="space-between center">
+            <div class="middleHeader">
+                <h1><a [routerLink]="''">{{ companyName }}</a></h1>
+            </div>
+            <div class="middleMenuBtn" fxLayoutGap="10px">
+                <!-- <a mat-button href="https://www.google.com/" target="_blank">Subscribe</a>
+                <a mat-button href="https://www.google.com/" target="_blank">Login</a> -->
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="loginBtn" [routerLink]="'login'">Member login</button>
+
+            </div>
+        </div>
+    </mat-toolbar>
+    <mat-toolbar color="warn">
+
+        <div class="navbar" fxLayoutAlign="center center" fxFlex="100%" fxHide fxShow.gt-sm>
+            <button class="menuBtn" [routerLink]="''" mat-button>Home</button>
+
+            <button class="menuBtn" mat-button [matMenuTriggerFor]="businessMedia">Media Business</button>
+            <mat-menu #businessMedia="matMenu" yPosition="below">
+                <button mat-menu-item [routerLink]="'printing'" style="color: black;">News & Printing</button>
+                <button mat-menu-item [routerLink]="'events'" style="color: black;">Events</button>
+                <button mat-menu-item [routerLink]="'commercialprint'" style="color: black;">Commercial Printing</button>
+                <button mat-menu-item [routerLink]="'digital'" style="color: black;">Digital</button>
+                <button mat-menu-item [routerLink]="'achievements'" style="color: black;">Achivements</button>
+            </mat-menu>
+
+            <button class="menuBtn" mat-button [matMenuTriggerFor]="CommunityNetwork">Community Network</button>
+            <mat-menu #CommunityNetwork="matMenu" yPosition="below">
+                <button mat-menu-item [routerLink]="'janaandolan'" style="color: black;">Republic Janandolan</button>
+                <button mat-menu-item [routerLink]="'studentunion'">Student Union</button>
+                <button mat-menu-item [routerLink]="'baseri'" style="color: black;">BASERI</button>
+            </mat-menu>
+
+            <button class="menuBtn" mat-button [matMenuTriggerFor]="educationCarrer">Education & Carrer</button>
+            <mat-menu #educationCarrer="matMenu" yPosition="below">
+                <button mat-menu-item [routerLink]="'job'" style="color: black;">Jobs</button>
+                <button mat-menu-item [routerLink]="'internships'" style="color: black;">Internships</button>
+                <button mat-menu-item [routerLink]="'leadership'" style="color: black;">Leadership Development</button>
+            </mat-menu>
+
+            <button class="menuBtn" mat-button [matMenuTriggerFor]="news">News</button>
+            <mat-menu #news="matMenu" yPosition="below">
+                <button mat-menu-item [routerLink]="'#'" style="color: black;">Republican janata</button>
+                <button mat-menu-item [routerLink]="'#'" style="color: black;">e-paper</button>
+                <button mat-menu-item [routerLink]="'#'" style="color: black;">Print</button>
+            </mat-menu>
+
+            <button class="menuBtn" mat-button [matMenuTriggerFor]="about">About</button>
+            <mat-menu #about="matMenu" yPosition="below">
+                <button mat-menu-item [routerLink]="'vision'" style="color: black;">Vision & Values</button>
+                <button mat-menu-item [routerLink]="'journey'" style="color: black;">Journey So far</button>
+                <button mat-menu-item [routerLink]="'milestone'" style="color: black;">Milestone</button>
+                <button mat-menu-item [routerLink]="'management'" style="color: black;">Management</button>
+                <button mat-menu-item [routerLink]="'directors'" style="color: black;">Board of Directors</button>
+            </mat-menu>
+
+            <button class="menuBtn" mat-button [routerLink]="'contact'"><a>Contact</a></button>
+        </div>
+
+        <div fxLayoutAlign="center center" fxFlex="40%" fxHide fxShow.lt-sm>
+            <a mat-button href="https://www.google.com/" target="_blank">Test 1</a>
+            <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+            <a mat-button href="https://www.google.com/" target="_blank">Test 2</a>
+            <a mat-button href="https://www.google.com/" target="_blank">Test 3</a>
+            <a mat-button href="https://www.google.com/" target="_blank">Test 4</a>
+        </div>
+    </mat-toolbar>
+</div>

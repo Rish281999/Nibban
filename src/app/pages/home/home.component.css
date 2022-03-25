@@ -1,0 +1,14 @@
+.bgimg{
+    background: url(../../../assets/banner5.jpg) no-repeat;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg h1{
+    color: #000;
+    font-weight: bold;
+    font-size: 80px;
+    /* position: relative;
+    top: 30%;
+    left: 30%; */
+}

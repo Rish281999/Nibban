@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    margin: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Roboto';
+}
+
+.example-card {
+    max-width: 400px;
+    background-color: #F44336;
+    color: #fff;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.dividerTop {
+    background-color: #000;
+}
+
+
+/* 
+mat-card-header {
+    background-color: #F44336;
+} */

@@ -1,0 +1,82 @@
+<!-- <mat-toolbar class="footer">
+    <div class="footerContent" fxFlex="95%" fxLayoutAlign="space-between center">
+        <div>
+            <span class="mat-subheading-2">Copyright &#169;{{ companyName }}</span>
+        </div>
+        <div class="socialBtn">
+            <a href=""><mat-icon>facebook</mat-icon></a>
+            <a href=""><mat-icon>instagram</mat-icon></a>
+            <a href=""><mat-icon>whatsapp</mat-icon></a>
+        </div>
+    </div>
+</mat-toolbar> -->
+<!-- 
+<div>
+    <mat-toolbar>
+        <div class="footer" #footer>
+            <h1 class="mat-subheading-2">Copyright &#169;company Name</h1>
+        </div>
+    </mat-toolbar>
+</div> -->
+
+<body>
+    <div class="container"></div>
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2 class="ft-title">News</h2>
+                <ul>
+                    <li><a routerLink="re">Republican janata</a></li>
+                    <li><a routerLink="">e-paper</a></li>
+                    <li><a routerLink="">Print</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">About</h2>
+                <ul>
+                    <li><a routerLink="vision">Vision and Values</a></li>
+                    <li><a routerLink="journey">Journey SO far</a></li>
+                    <li><a routerLink="milestone">Milestone</a></li>
+                    <li><a routerLink="management">Management</a></li>
+                    <li><a routerLink="directors">Board of Directors</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h2><a routerLink="contact">Contact</a></h2>
+            </div>
+            <div class="ft-main-item">
+                <h2 class="ft-title">Stay Updated</h2>
+                <p>Subscribe to our newsletter to get our latest news.</p>
+                <form>
+                    <input type="email" name="email" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe" (click)="onSubscribe()">
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer social -->
+        <section class="ft-social">
+            <ul class="ft-social-list">
+                <a href="www.facebook.com">
+                    <mat-icon>facebook</mat-icon>
+                </a>
+                <a href="www.instagram.com">
+                    <mat-icon>instagram</mat-icon>
+                </a>
+                <a href="web.whatsapp.com">
+                    <mat-icon>whatsapp</mat-icon>
+                </a>
+            </ul>
+        </section>
+
+        <!-- Footer legal -->
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>&copy; 2019 Copyright Nibban News Media Pvt. Ltd.</li>
+            </ul>
+        </section>
+    </footer>
+</body>
