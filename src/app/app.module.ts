@@ -44,6 +44,8 @@ import { PrintingComponent } from './pages/printing/printing.component';
 import { StudentunionComponent } from './pages/studentunion/studentunion.component';
 import { VisionComponent } from './pages/vision/vision.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
+import { UserloginComponent } from './pages/userlogin/userlogin.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,9 @@ import { LoginComponent } from './pages/login/login.component';
     PrintingComponent,
     StudentunionComponent,
     VisionComponent,
-    LoginComponent
+    LoginComponent,
+    AdminloginComponent,
+    UserloginComponent
   ],
   imports: [
     BrowserModule,

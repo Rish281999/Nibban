@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
+import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
 import { BaseriComponent } from './pages/baseri/baseri.component';
 import { CommercialprintComponent } from './pages/commercialprint/commercialprint.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -16,13 +17,13 @@ import { JanaandolanComponent } from './pages/janaandolan/janaandolan.component'
 import { JobComponent } from './pages/job/job.component';
 import { JourneyComponent } from './pages/journey/journey.component';
 import { LeadershipComponent } from './pages/leadership/leadership.component';
-import { LoginComponent } from './pages/login/login.component';
 import { ManagementComponent } from './pages/management/management.component';
 import { MediabusinessComponent } from './pages/mediabusiness/mediabusiness.component';
 import { MilestoneComponent } from './pages/milestone/milestone.component';
 import { NewsComponent } from './pages/news/news.component';
 import { PrintingComponent } from './pages/printing/printing.component';
 import { StudentunionComponent } from './pages/studentunion/studentunion.component';
+import { UserloginComponent } from './pages/userlogin/userlogin.component';
 import { VisionComponent } from './pages/vision/vision.component';
 
 const routes: Routes = [
@@ -42,14 +43,15 @@ const routes: Routes = [
   {path:'job',component:JobComponent},
   {path:'journey',component:JourneyComponent},
   {path:'leadership',component:LeadershipComponent},
-  {path:'login',component:LoginComponent},
   {path:'management',component:ManagementComponent},
   {path:'mediabusiness',component:MediabusinessComponent},
   {path:'milestone',component:MilestoneComponent},
   {path:'news',component:NewsComponent},
   {path:'printing',component:PrintingComponent},
   {path:'studentunion',component:StudentunionComponent},
-  {path:'vision',component:VisionComponent}
+  {path:'vision',component:VisionComponent},
+  {path:'adminlogin',component:AdminloginComponent},
+  {path:'userlogin',component:UserloginComponent}
 ];
 
 @NgModule({

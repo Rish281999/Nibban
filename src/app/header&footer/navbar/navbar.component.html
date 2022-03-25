@@ -17,7 +17,11 @@
                 <!-- <a mat-button href="https://www.google.com/" target="_blank">Subscribe</a>
                 <a mat-button href="https://www.google.com/" target="_blank">Login</a> -->
                 <button class="subscribeBtn">Subscribe</button>
-                <button class="loginBtn" [routerLink]="'login'">Member login</button>
+                <button class="loginBtn" [matMenuTriggerFor]="MemeberLogin" [routerLink]="'login'">Member login</button>
+                <mat-menu #MemeberLogin="matMenu" yPosition="below">
+                    <button mat-menu-item [routerLink]="'adminlogin'" style="color: black;">Admin Login</button>
+                    <button mat-menu-item [routerLink]="'userlogin'" style="color: black;">User Login</button>
+                </mat-menu>
 
             </div>
         </div>
