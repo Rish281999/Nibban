@@ -8,25 +8,25 @@
     <div class="container-fluid mt-3" fxFill fxLayoutAlign="end center">
         <mat-card fxFlex="37">
             <mat-toolbar color="primary" fxLayoutAlign="center center" class="formHeading">Contact Form</mat-toolbar>
-            <form [formGroup]="service.form" class="contactForm" flexLayoutAlign="stretch" fxLayout="column">
+            <form #frm="ngForm" [formGroup]="service.form" class="contactForm" flexLayoutAlign="stretch" fxLayout="column" (ngSubmit)="getemail(frm.value)">
                 <div class="controls-container">
-                    <input type="hidden" formControlName="$key">
+                    <input type="hidden" formControlName="$key" ngModel>
                     <mat-form-field class="full-width" appearance="fill">
                         <mat-label>Your Name</mat-label>
-                        <input formControlName="fullName" matInput>
+                        <input formControlName="fullName" matInput ngModel>
                         <mat-error>This field is mandatory</mat-error>
                     </mat-form-field>
 
                     <mat-form-field class="full-width" appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input formControlName="email" type="email" matInput>
+                        <input formControlName="email" type="email" matInput ngModel>
                         <mat-error *ngIf="service.form.controls['email'].errors?.['required']">This field is mandatory</mat-error>
                         <mat-error *ngIf="service.form.controls['email'].errors?.['pattern']">Invalid email address!</mat-error>
                     </mat-form-field>
 
                     <mat-form-field class="full-width" appearance="fill">
                         <mat-label>Message</mat-label>
-                        <input formControlName="message" matInput #message maxlength="256">
+                        <input formControlName="message" matInput #message maxlength="256" ngModel>
                         <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
                     </mat-form-field>
                 </div>

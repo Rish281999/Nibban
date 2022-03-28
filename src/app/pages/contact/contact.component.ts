@@ -13,6 +13,11 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getemail(val:any){
+    console.log(val)
+
+  }
+
   onClear(){
     this.service.form.reset();
     this.service.initializeFormGroup();
