@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserloginComponent implements OnInit {
 
-  hide = true;
   constructor() { }
 
   ngOnInit(): void {

@@ -51,7 +51,7 @@ const routes: Routes = [
   {path:'studentunion',component:StudentunionComponent},
   {path:'vision',component:VisionComponent},
   {path:'adminlogin',component:AdminloginComponent},
-  {path:'userlogin',component:UserloginComponent}
+  {path:'userlogin',component:UserloginComponent},
 ];
 
 @NgModule({

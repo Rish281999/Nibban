@@ -1,0 +1,26 @@
+{
+  "contactUsers": [
+    {
+      "fullName": "admin",
+      "email": "test@gmail.com",
+      "message": "hello",
+      "id": 1
+    },
+    {
+      "fullName": "rishi",
+      "email": "thoratrishabh28@gmail.com",
+      "message": "test",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

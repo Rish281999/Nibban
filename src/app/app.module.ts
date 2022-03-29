@@ -43,7 +43,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { PrintingComponent } from './pages/printing/printing.component';
 import { StudentunionComponent } from './pages/studentunion/studentunion.component';
 import { VisionComponent } from './pages/vision/vision.component';
-import { LoginComponent } from './pages/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
 import { UserloginComponent } from './pages/userlogin/userlogin.component';
 
@@ -75,9 +75,8 @@ import { UserloginComponent } from './pages/userlogin/userlogin.component';
     PrintingComponent,
     StudentunionComponent,
     VisionComponent,
-    LoginComponent,
     AdminloginComponent,
-    UserloginComponent
+    UserloginComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,7 +94,8 @@ import { UserloginComponent } from './pages/userlogin/userlogin.component';
     ReactiveFormsModule,
     MatGridListModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
   ],
   providers: [ContactusService],
   bootstrap: [AppComponent]
