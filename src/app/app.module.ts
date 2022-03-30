@@ -46,6 +46,7 @@ import { VisionComponent } from './pages/vision/vision.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
 import { UserloginComponent } from './pages/userlogin/userlogin.component';
+import { AdmindashboardComponent } from './pages/admindashboard/admindashboard.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { UserloginComponent } from './pages/userlogin/userlogin.component';
     VisionComponent,
     AdminloginComponent,
     UserloginComponent,
+    AdmindashboardComponent,
   ],
   imports: [
     BrowserModule,

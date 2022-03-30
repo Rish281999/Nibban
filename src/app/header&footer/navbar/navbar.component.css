@@ -15,7 +15,7 @@ a.title {
 }
 
 .middleMenuBtn a {
-    background-color: red;
+    background-color: #F44336;
     color: #ffffff !important;
 }
 
@@ -26,7 +26,7 @@ a.title {
 
 .subscribeBtn,
 .loginBtn {
-    background-color: red;
+    background-color: #F44336;
     color: #ffffff;
     font-size: 15px;
     font-weight: 450;
