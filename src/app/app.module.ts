@@ -47,6 +47,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
 import { UserloginComponent } from './pages/userlogin/userlogin.component';
 import { AdmindashboardComponent } from './pages/admindashboard/admindashboard.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -97,7 +101,11 @@ import { AdmindashboardComponent } from './pages/admindashboard/admindashboard.c
     MatGridListModule,
     MatCardModule,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+    
   ],
   providers: [ContactusService],
   bootstrap: [AppComponent]

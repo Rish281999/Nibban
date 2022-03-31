@@ -1,26 +1,22 @@
 {
   "contactUsers": [
     {
-      "fullName": "admin",
-      "email": "test@gmail.com",
-      "message": "hello",
-      "id": 1
-    },
-    {
-      "fullName": "rishi",
-      "email": "thoratrishabh28@gmail.com",
-      "message": "test",
-      "id": 2
+      "fullName": "rishabh Thorat",
+      "email": "thoratrishabh@gmail.com",
+      "message": "hello my name is rishabh",
+      "id": 4
     }
   ],
-  "comments": [
+  "adminLogin": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "Admin",
+      "password": "Admin@123"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "userLogin": [
+    {
+      "userName": "User",
+      "password": "User@123"
+    }
+  ]
 }

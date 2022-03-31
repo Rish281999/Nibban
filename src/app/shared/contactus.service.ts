@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { FormGroup, FormControl, Validator, Validators } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
@@ -30,5 +29,8 @@ export class ContactusService {
   }
   getContactUser(){
     return this.http.get<any>("http://localhost:3000/contactUsers/");
+  }
+  deleteContactUser(id:number){
+    return this.http.delete<any>("http://localhost:3000/contactUsers/"+id);
   }
 }
