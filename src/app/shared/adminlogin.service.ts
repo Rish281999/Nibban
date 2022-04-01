@@ -10,4 +10,5 @@ export class AdminloginService {
   getAdminLogin(){
     return this.http.get<any>("http://localhost:3000/adminLogin/");
   }
+
 }

@@ -11,6 +11,7 @@ import { AdminloginService } from 'src/app/shared/adminlogin.service';
 export class AdminloginComponent implements OnInit {
   hide = true;
   public adminLoginForm ! : FormGroup
+  isAuthenticated = false;
 
   constructor(private router:Router, private service: AdminloginService) { }
 
@@ -37,7 +38,6 @@ export class AdminloginComponent implements OnInit {
         return a.username === this.adminLoginForm.value.username && a.password === this.adminLoginForm.value.password
         });
         if(admin){
-          alert("Login Successful");
           this.adminLoginForm.reset();
           this.router.navigate(['admindashboard'])
         }else{
@@ -47,5 +47,7 @@ export class AdminloginComponent implements OnInit {
           alert("Something went wrong")
         })
   }
+
+  
 
 }
