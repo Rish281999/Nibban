@@ -44,12 +44,14 @@ import { PrintingComponent } from './pages/printing/printing.component';
 import { StudentunionComponent } from './pages/studentunion/studentunion.component';
 import { VisionComponent } from './pages/vision/vision.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
+import { AdminloginComponent } from './pages/admin/adminlogin/adminlogin.component';
 import { UserloginComponent } from './pages/userlogin/userlogin.component';
-import { AdmindashboardComponent } from './pages/admindashboard/admindashboard.component';
+import { AdmindashboardComponent } from './pages/admin/admindashboard/admindashboard.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import { AdminmainComponent } from './pages/admin/adminmain/adminmain.component';
+import { TestComponent } from './pages/admin/test/test.component';
 
 
 @NgModule({
@@ -83,6 +85,8 @@ import {MatSortModule} from '@angular/material/sort';
     AdminloginComponent,
     UserloginComponent,
     AdmindashboardComponent,
+    AdminmainComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,

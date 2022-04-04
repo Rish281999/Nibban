@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
-import { AdmindashboardComponent } from './pages/admindashboard/admindashboard.component';
-import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
+import { AdmindashboardComponent } from './pages/admin/admindashboard/admindashboard.component';
+import { AdminloginComponent } from './pages/admin/adminlogin/adminlogin.component';
+import { AdminmainComponent } from './pages/admin/adminmain/adminmain.component';
+import { TestComponent } from './pages/admin/test/test.component';
 import { BaseriComponent } from './pages/baseri/baseri.component';
 import { CommercialprintComponent } from './pages/commercialprint/commercialprint.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -53,7 +55,9 @@ const routes: Routes = [
   {path:'vision',component:VisionComponent},
   {path:'adminlogin',component:AdminloginComponent},
   {path:'userlogin',component:UserloginComponent},
-  {path:'admindashboard',component:AdmindashboardComponent}
+  {path:'admindashboard',component:AdmindashboardComponent},
+  {path:'adminmain',component:AdminmainComponent},
+  {path:'test',component:TestComponent}
 ];
 
 @NgModule({

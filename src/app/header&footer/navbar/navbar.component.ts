@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AdminloginComponent } from 'src/app/pages/adminlogin/adminlogin.component';
 
 @Component({
   selector: 'app-navbar',

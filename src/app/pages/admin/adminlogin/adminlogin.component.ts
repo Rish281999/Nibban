@@ -11,7 +11,7 @@ import { AdminloginService } from 'src/app/shared/adminlogin.service';
 export class AdminloginComponent implements OnInit {
   hide = true;
   public adminLoginForm ! : FormGroup
-  isAuthenticated = false;
+  // isAuthenticated = false;
 
   constructor(private router:Router, private service: AdminloginService) { }
 
