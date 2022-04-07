@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list'
@@ -52,6 +53,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { AdminmainComponent } from './pages/admin/adminmain/adminmain.component';
 import { TestComponent } from './pages/admin/test/test.component';
+import { RegistrationComponent } from './pages/admin/registration/registration.component';
 
 
 @NgModule({
@@ -87,6 +89,7 @@ import { TestComponent } from './pages/admin/test/test.component';
     AdmindashboardComponent,
     AdminmainComponent,
     TestComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,7 +111,8 @@ import { TestComponent } from './pages/admin/test/test.component';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule
     
   ],
   providers: [ContactusService],

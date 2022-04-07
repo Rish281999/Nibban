@@ -5,6 +5,7 @@ import { AchievementsComponent } from './pages/achievements/achievements.compone
 import { AdmindashboardComponent } from './pages/admin/admindashboard/admindashboard.component';
 import { AdminloginComponent } from './pages/admin/adminlogin/adminlogin.component';
 import { AdminmainComponent } from './pages/admin/adminmain/adminmain.component';
+import { RegistrationComponent } from './pages/admin/registration/registration.component';
 import { TestComponent } from './pages/admin/test/test.component';
 import { BaseriComponent } from './pages/baseri/baseri.component';
 import { CommercialprintComponent } from './pages/commercialprint/commercialprint.component';
@@ -57,7 +58,8 @@ const routes: Routes = [
   {path:'userlogin',component:UserloginComponent},
   {path:'admindashboard',component:AdmindashboardComponent},
   {path:'adminmain',component:AdminmainComponent},
-  {path:'test',component:TestComponent}
+  {path:'test',component:TestComponent},
+  {path:'registration',component:RegistrationComponent}
 ];
 
 @NgModule({
