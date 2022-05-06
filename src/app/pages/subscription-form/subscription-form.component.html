@@ -1,0 +1,92 @@
+<h1 mat-dialog-title>Welcome</h1>
+<div mat-dialog-content>
+    <form [formGroup]="subscriptionForm">
+        <div fxLayoutAlign="space-between center">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input formControlName="FirstName" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Middle Name</mat-label>
+                <input formControlName="FirstName" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input formControlName="LastName" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="stretch" fxLayout="column" class="mt-3">
+            <mat-label style="font-weight: bold;">Address</mat-label>
+
+            <mat-form-field appearance="outline">
+                <mat-label>State</mat-label>
+                <mat-select formControlName="state">
+                    <mat-option value="option">Maharashtra</mat-option>
+                </mat-select>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>District</mat-label>
+                <mat-select formControlName="district">
+                    <mat-option value="option">Thane</mat-option>
+                    <mat-option value="option">Mumbai</mat-option>
+                </mat-select>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>House/Flat no</mat-label>
+                <input formControlName="house" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Street/locality</mat-label>
+                <input formControlName="street" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Landmark</mat-label>
+                <input formControlName="landmark" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Pincode</mat-label>
+                <input formControlName="pincode" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Mobile No/Whatsapp No</mat-label>
+                <input formControlName="mobile_no" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" type="email" matInput ngModel>
+                <mat-error *ngIf="subscriptionForm.controls['email'].errors?.['required']">This field is mandatory</mat-error>
+                <mat-error *ngIf="subscriptionForm.controls['email'].errors?.['pattern']">Invalid email address!</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Profession</mat-label>
+                <input formControlName="profession" matInput>
+                <mat-error>This field is mandatory</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="end" fxLayoutGap="10px">
+            <button mat-raised-button color="primary">Submit</button>
+            <button mat-raised-button color="primary">Clear</button>
+        </div>
+    </form>
+</div>

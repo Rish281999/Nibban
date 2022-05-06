@@ -54,6 +54,9 @@ import {MatSortModule} from '@angular/material/sort';
 import { AdminmainComponent } from './pages/admin/adminmain/adminmain.component';
 import { TestComponent } from './pages/admin/test/test.component';
 import { RegistrationComponent } from './pages/admin/registration/registration.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CustomerLoginComponent } from './pages/customer-login/customer-login.component';
+import { SubscriptionFormComponent } from './pages/subscription-form/subscription-form.component';
 
 
 @NgModule({
@@ -90,6 +93,8 @@ import { RegistrationComponent } from './pages/admin/registration/registration.c
     AdminmainComponent,
     TestComponent,
     RegistrationComponent,
+    CustomerLoginComponent,
+    SubscriptionFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,7 +117,8 @@ import { RegistrationComponent } from './pages/admin/registration/registration.c
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
     
   ],
   providers: [ContactusService],
