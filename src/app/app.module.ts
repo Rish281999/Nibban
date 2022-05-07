@@ -57,7 +57,8 @@ import { RegistrationComponent } from './pages/admin/registration/registration.c
 import {MatDialogModule} from '@angular/material/dialog';
 import { CustomerLoginComponent } from './pages/customer-login/customer-login.component';
 import { SubscriptionFormComponent } from './pages/subscription-form/subscription-form.component';
-
+import { EmployeeLoginComponent } from './pages/employee-login/employee-login.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -95,6 +96,7 @@ import { SubscriptionFormComponent } from './pages/subscription-form/subscriptio
     RegistrationComponent,
     CustomerLoginComponent,
     SubscriptionFormComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -118,7 +120,8 @@ import { SubscriptionFormComponent } from './pages/subscription-form/subscriptio
     MatPaginatorModule,
     MatSortModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule
     
   ],
   providers: [ContactusService],

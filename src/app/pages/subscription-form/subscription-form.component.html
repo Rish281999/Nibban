@@ -36,7 +36,41 @@
                 <mat-label>District</mat-label>
                 <mat-select formControlName="district">
                     <mat-option value="option">Thane</mat-option>
+                    <mat-option value="option">Ahmednagar</mat-option>
                     <mat-option value="option">Mumbai</mat-option>
+                    <mat-option value="option">Akola</mat-option>
+                    <mat-option value="option">Amravati</mat-option>
+                    <mat-option value="option">Aurangabad</mat-option>
+                    <mat-option value="option">Beed</mat-option>
+                    <mat-option value="option">Bhandara</mat-option>
+                    <mat-option value="option">Buldhana</mat-option>
+                    <mat-option value="option">Chandrapur</mat-option>
+                    <mat-option value="option">Dhule</mat-option>
+                    <mat-option value="option">Gadchiroli</mat-option>
+                    <mat-option value="option">Gondia</mat-option>
+                    <mat-option value="option">Hingoli</mat-option>
+                    <mat-option value="option">Jalgaon</mat-option>
+                    <mat-option value="option">Jalna</mat-option>
+                    <mat-option value="option">Kolhapur</mat-option>
+                    <mat-option value="option">Latur</mat-option>
+                    <mat-option value="option">Mumbai City</mat-option>
+                    <mat-option value="option">Mumbai Suburban</mat-option>
+                    <mat-option value="option">Nagpur</mat-option>
+                    <mat-option value="option">Nanded</mat-option>
+                    <mat-option value="option">Nandurbar</mat-option>
+                    <mat-option value="option">Nashik</mat-option>
+                    <mat-option value="option">Osmanabad</mat-option>
+                    <mat-option value="option">Palghar</mat-option>
+                    <mat-option value="option">Parbhani</mat-option>
+                    <mat-option value="option">Pune</mat-option>
+                    <mat-option value="option">Raigad</mat-option>
+                    <mat-option value="option">Ratnagiri</mat-option>
+                    <mat-option value="option">Satara</mat-option>
+                    <mat-option value="option">Sindhudurg</mat-option>
+                    <mat-option value="option">Solapur</mat-option>
+                    <mat-option value="option">Wardha</mat-option>
+                    <mat-option value="option">Washim</mat-option>
+                    <mat-option value="option">Yavatmal</mat-option>
                 </mat-select>
                 <mat-error>This field is mandatory</mat-error>
             </mat-form-field>
@@ -61,22 +95,30 @@
 
             <mat-form-field appearance="outline">
                 <mat-label>Pincode</mat-label>
-                <input formControlName="pincode" matInput>
+                <input formControlName="pincode" (keypress)="OnlyNumbersAllowed($event)" matInput>
                 <mat-error>This field is mandatory</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <mat-label>Mobile No/Whatsapp No</mat-label>
-                <input formControlName="mobile_no" matInput>
-                <mat-error>This field is mandatory</mat-error>
+                <input formControlName="mobile_no" (keypress)="OnlyNumbersAllowed($event)" matInput>
+                <mat-error *ngIf="subscriptionForm.controls['mobile_no'].errors?.['required']">This field is mandatory</mat-error>
+                <mat-error *ngIf="subscriptionForm.controls['mobile_no'].errors?.['pattern']">Mobile number should be 10 digit</mat-error>
             </mat-form-field>
 
             <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Email</mat-label>
-                <input formControlName="email" type="email" matInput ngModel>
+                <input formControlName="email" type="email" matInput>
                 <mat-error *ngIf="subscriptionForm.controls['email'].errors?.['required']">This field is mandatory</mat-error>
                 <mat-error *ngIf="subscriptionForm.controls['email'].errors?.['pattern']">Invalid email address!</mat-error>
             </mat-form-field>
+
+            <label class="mb-2">gender</label>
+            <mat-radio-group class="mb-3" formControlName="gender">
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button value="2">Female</mat-radio-button>
+                <mat-radio-button value="3">Trans Gender</mat-radio-button>
+            </mat-radio-group>
 
             <mat-form-field appearance="outline">
                 <mat-label>Profession</mat-label>
@@ -86,7 +128,7 @@
         </div>
         <div fxLayoutAlign="end" fxLayoutGap="10px">
             <button mat-raised-button color="primary">Submit</button>
-            <button mat-raised-button color="primary">Clear</button>
+            <button mat-raised-button color="warn">Clear</button>
         </div>
     </form>
 </div>

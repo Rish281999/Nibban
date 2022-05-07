@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 
-
 @Component({
-  selector: 'app-customer-login',
-  templateUrl: './customer-login.component.html',
-  styleUrls: ['./customer-login.component.css']
+  selector: 'app-employee-login',
+  templateUrl: './employee-login.component.html',
+  styleUrls: ['./employee-login.component.css']
 })
-export class CustomerLoginComponent implements OnInit {
+export class EmployeeLoginComponent implements OnInit {
   hide = true;
   userLoginForm ! : FormGroup
 

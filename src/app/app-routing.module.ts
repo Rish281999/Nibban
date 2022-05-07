@@ -11,9 +11,11 @@ import { BaseriComponent } from './pages/baseri/baseri.component';
 import { CommercialprintComponent } from './pages/commercialprint/commercialprint.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CorporatedetailsComponent } from './pages/corporatedetails/corporatedetails.component';
+import { CustomerLoginComponent } from './pages/customer-login/customer-login.component';
 import { DigitalComponent } from './pages/digital/digital.component';
 import { DirectorsComponent } from './pages/directors/directors.component';
 import { EducationcarrerComponent } from './pages/educationcarrer/educationcarrer.component';
+import { EmployeeLoginComponent } from './pages/employee-login/employee-login.component';
 import { EventsComponent } from './pages/events/events.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InternshipsComponent } from './pages/internships/internships.component';
@@ -59,7 +61,9 @@ const routes: Routes = [
   {path:'admindashboard',component:AdmindashboardComponent},
   {path:'adminmain',component:AdminmainComponent},
   {path:'test',component:TestComponent},
-  {path:'registration',component:RegistrationComponent}
+  {path:'registration',component:RegistrationComponent},
+  {path:'employee',component:EmployeeLoginComponent},
+  {path:'customer',component:CustomerLoginComponent}
 ];
 
 @NgModule({
