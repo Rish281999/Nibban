@@ -1,6 +1,7 @@
 .topHeader {
     background-color: black;
     color: #ffffff;
+    height: auto;
 }
 
 a.title {

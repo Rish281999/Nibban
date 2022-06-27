@@ -59,6 +59,7 @@ import { CustomerLoginComponent } from './pages/customer-login/customer-login.co
 import { SubscriptionFormComponent } from './pages/subscription-form/subscription-form.component';
 import { EmployeeLoginComponent } from './pages/employee-login/employee-login.component';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -121,8 +122,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSortModule,
     MatSelectModule,
     MatDialogModule,
-    MatRadioModule
-    
+    MatRadioModule,
+    MatSnackBarModule
   ],
   providers: [ContactusService],
   bootstrap: [AppComponent]

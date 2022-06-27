@@ -5,6 +5,18 @@
       "email": "thoratrishabh28@gmail.com",
       "message": "this is a test message",
       "id": 1
+    },
+    {
+      "fullName": "dsz",
+      "email": "abc@gmail.com",
+      "message": "szxc",
+      "id": 2
+    },
+    {
+      "fullName": "admin",
+      "email": "test@gmail.com",
+      "message": "dfd",
+      "id": 3
     }
   ],
   "adminLogin": [

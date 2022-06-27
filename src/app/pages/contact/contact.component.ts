@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactusService } from '../../shared/contactus.service'
 import { FormGroup, FormControl, Validator, Validators, FormBuilder } from '@angular/forms';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,7 @@ import { FormGroup, FormControl, Validator, Validators, FormBuilder } from '@ang
 export class ContactComponent implements OnInit {
   contactForm ! : FormGroup
 
-  constructor(public service: ContactusService, private formBuilder : FormBuilder) { }
+  constructor(public service: ContactusService, private formBuilder : FormBuilder, private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -36,7 +37,7 @@ export class ContactComponent implements OnInit {
     if(this.contactForm.valid){
       this.service.postContactUser(this.contactForm.value).subscribe({
         next:(res)=>{
-          alert("Thank you")
+          this.snackBar.open("Thank you")
           this.contactForm.reset();
         },
         error:()=>{

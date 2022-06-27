@@ -10,7 +10,7 @@ import { SubscriptionFormComponent } from 'src/app/pages/subscription-form/subsc
 })
 export class NavbarComponent implements OnInit {
 
-  companyName = 'Nibban News Media Pvt. Ltd.'
+  companyName = 'Nibban News Media'
   email = 'test@gmail.com'
   phoneNo = '1234567890'
   
